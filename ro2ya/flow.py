@@ -1049,11 +1049,11 @@ def flow_debug(panel_master_path):
                     docx_not_following_rules.append(name + ": Mark [V1] is missing.")
 
     print("List of .xlsx files not following the requirements:")
-    for item in xlsx_not_following_rules:
-        print(item)
+    for item_xlsx in xlsx_not_following_rules:
+        print(item_xlsx)
     
     print("\nList of .docx files not following the requirements:")
-    for item in docx_not_following_rules:
-        print(item)
+    for item_docx in docx_not_following_rules:
+        print(item_docx)
 
-    return xlsx_not_following_rules, docx_not_following_rules
+    return item_xlsx, item_docx
